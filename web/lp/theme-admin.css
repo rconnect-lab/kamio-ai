@@ -1,18 +1,18 @@
 :root {
-  --bg: #f4f7fb;
-  --bg-soft: #e9eef6;
+  --bg: #f7f7f7;
+  --bg-soft: #edf3f8;
   --surface: #ffffff;
-  --ink: #101928;
-  --muted: #4a5a73;
-  --line: #d4ddea;
-  --brand: #1d4f9f;
-  --brand-strong: #102f66;
-  --accent: #b16c2d;
-  --hero-grad: linear-gradient(140deg, rgba(29, 79, 159, 0.12), rgba(177, 108, 45, 0.11));
-  --ambient-1: rgba(29, 79, 159, 0.08);
-  --ambient-2: rgba(16, 47, 102, 0.06);
-  --chip-bg: #dfe8f8;
-  --chip-ink: #173f83;
+  --ink: #17253a;
+  --muted: #4d6076;
+  --line: #d5deea;
+  --brand: #0b90dd;
+  --brand-strong: #086ca6;
+  --accent: #2279d2;
+  --hero-grad: linear-gradient(140deg, rgba(11, 144, 221, 0.16), rgba(34, 121, 210, 0.14));
+  --ambient-1: rgba(11, 144, 221, 0.1);
+  --ambient-2: rgba(8, 108, 166, 0.08);
+  --chip-bg: #e1f2fb;
+  --chip-ink: #086ca6;
 }
 
 .hero::after {
@@ -22,12 +22,23 @@
   top: 14px;
   width: 132px;
   height: 132px;
-  border: 1px solid rgba(16, 47, 102, 0.18);
+  border: 1px solid rgba(8, 108, 166, 0.2);
   border-radius: 12px;
   background: repeating-linear-gradient(
     45deg,
-    rgba(16, 47, 102, 0.08) 0 8px,
+    rgba(8, 108, 166, 0.12) 0 8px,
     transparent 8px 16px
   );
   opacity: 0.7;
+}
+
+body {
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+}
+
+h1,
+h2,
+h3,
+.mode {
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
 }
