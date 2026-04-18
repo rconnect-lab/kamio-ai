@@ -1,0 +1,31 @@
+:root {
+  --bg: #fff9f3;
+  --bg-soft: #fff1e7;
+  --surface: #ffffff;
+  --ink: #2e1c12;
+  --muted: #6d5346;
+  --line: #efd9c6;
+  --brand: #d05d2f;
+  --brand-strong: #8d3512;
+  --accent: #2d7a7d;
+  --hero-grad: linear-gradient(140deg, rgba(208, 93, 47, 0.18), rgba(45, 122, 125, 0.14));
+  --ambient-1: rgba(208, 93, 47, 0.11);
+  --ambient-2: rgba(45, 122, 125, 0.09);
+  --chip-bg: #ffe8db;
+  --chip-ink: #9a3e1a;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: min(66%, 760px);
+  top: 18px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 2px dashed rgba(141, 53, 18, 0.28);
+}
+
+.card {
+  background: linear-gradient(180deg, #fff 0%, #fff9f4 100%);
+}

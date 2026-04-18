@@ -1,0 +1,32 @@
+:root {
+  --bg: #f7f8f4;
+  --bg-soft: #eef2e8;
+  --surface: #ffffff;
+  --ink: #152114;
+  --muted: #4c5e4b;
+  --line: #d8e2d6;
+  --brand: #15875f;
+  --brand-strong: #0a5f42;
+  --accent: #dc5d2f;
+  --hero-grad: linear-gradient(140deg, rgba(21, 135, 95, 0.15), rgba(220, 93, 47, 0.12));
+  --ambient-1: rgba(21, 135, 95, 0.09);
+  --ambient-2: rgba(220, 93, 47, 0.08);
+  --chip-bg: #ddf4ea;
+  --chip-ink: #0c6a4a;
+}
+
+.hero {
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: -24px;
+  top: 24px;
+  width: 186px;
+  height: 186px;
+  border-radius: 42% 58% 58% 42%;
+  background: radial-gradient(circle at 20% 20%, rgba(220, 93, 47, 0.42), rgba(21, 135, 95, 0.22));
+  filter: blur(2px);
+}
