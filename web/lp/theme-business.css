@@ -1,22 +1,33 @@
 :root {
-  --bg: #f7f8f4;
-  --bg-soft: #eef2e8;
+  --bg: #f7f7f7;
+  --bg-soft: #edf3f8;
   --surface: #ffffff;
-  --ink: #152114;
-  --muted: #4c5e4b;
-  --line: #d8e2d6;
-  --brand: #15875f;
-  --brand-strong: #0a5f42;
-  --accent: #dc5d2f;
-  --hero-grad: linear-gradient(140deg, rgba(21, 135, 95, 0.15), rgba(220, 93, 47, 0.12));
-  --ambient-1: rgba(21, 135, 95, 0.09);
-  --ambient-2: rgba(220, 93, 47, 0.08);
-  --chip-bg: #ddf4ea;
-  --chip-ink: #0c6a4a;
+  --ink: #17253a;
+  --muted: #4d6076;
+  --line: #d5deea;
+  --brand: #0b90dd;
+  --brand-strong: #086ca6;
+  --accent: #2279d2;
+  --hero-grad: linear-gradient(140deg, rgba(11, 144, 221, 0.16), rgba(34, 121, 210, 0.14));
+  --ambient-1: rgba(11, 144, 221, 0.1);
+  --ambient-2: rgba(8, 108, 166, 0.08);
+  --chip-bg: #e1f2fb;
+  --chip-ink: #086ca6;
 }
 
 .hero {
   overflow: hidden;
+}
+
+body {
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+}
+
+h1,
+h2,
+h3,
+.mode {
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
 }
 
 .hero::after {
@@ -27,6 +38,6 @@
   width: 186px;
   height: 186px;
   border-radius: 42% 58% 58% 42%;
-  background: radial-gradient(circle at 20% 20%, rgba(220, 93, 47, 0.42), rgba(21, 135, 95, 0.22));
+  background: radial-gradient(circle at 20% 20%, rgba(11, 144, 221, 0.36), rgba(34, 121, 210, 0.22));
   filter: blur(2px);
 }
