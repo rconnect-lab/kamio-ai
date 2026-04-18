@@ -3,121 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LP外装比較 | Re:Connect Pay</title>
-    <meta name="description" content="行政信頼型・企業提携型・コミュニティ型のLP外装比較ページ。" />
+    <title>コミュニティ型LP | 次世代地域決済基盤</title>
+    <meta name="description" content="地域コミュニティ向けに参加導線と信頼性を両立したLPデザイン。" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
-    <style>
-      :root {
-        --bg: #f4f6fb;
-        --ink: #111d30;
-        --muted: #4c5d77;
-        --line: #d6deeb;
-        --a: #1d4f9f;
-        --b: #12845d;
-        --c: #c85d2e;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: "Noto Sans JP", sans-serif;
-        color: var(--ink);
-        background: radial-gradient(circle at 8% 10%, rgba(29,79,159,.09), transparent 40%),
-          radial-gradient(circle at 93% 12%, rgba(200,93,46,.08), transparent 34%), var(--bg);
-      }
-      .wrap { width: min(1080px, calc(100% - 2rem)); margin: 0 auto; }
-      header { padding: 3.2rem 0 1.6rem; }
-      h1 { margin: 0 0 .6rem; font-size: clamp(1.8rem, 4vw, 3rem); }
-      p { margin: 0; color: var(--muted); }
-      .cards {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 1rem;
-        padding-bottom: 2.2rem;
-      }
-      .card {
-        background: #fff;
-        border: 1px solid var(--line);
-        border-radius: 18px;
-        padding: 1rem;
-      }
-      .tag { display: inline-flex; border-radius: 999px; padding: .28rem .6rem; font-size: .78rem; font-weight: 700; margin-bottom: .7rem; }
-      .ta { background: #dfe8f8; color: #173f83; }
-      .tb { background: #ddf4ea; color: #0c6a4a; }
-      .tc { background: #ffe8db; color: #9a3e1a; }
-      .card h2 { margin: 0 0 .5rem; font-size: 1.2rem; }
-      .card ul { margin: .65rem 0 1rem 1.1rem; padding: 0; color: var(--muted); }
-      .btn {
-        display: inline-flex;
-        min-height: 42px;
-        align-items: center;
-        border-radius: 999px;
-        padding: 0 1rem;
-        text-decoration: none;
-        color: #fff;
-        font-weight: 700;
-      }
-      .ba { background: linear-gradient(130deg, #1d4f9f, #102f66); }
-      .bb { background: linear-gradient(130deg, #15875f, #0a5f42); }
-      .bc { background: linear-gradient(130deg, #d05d2f, #8d3512); }
-      .footer-links {
-        display: flex;
-        gap: .7rem;
-        flex-wrap: wrap;
-        padding-bottom: 2.8rem;
-      }
-      .footer-links a { color: var(--muted); text-decoration: none; border-bottom: 1px dashed var(--line); }
-      @media (max-width: 860px) {
-        .cards { grid-template-columns: 1fr; }
-      }
-    </style>
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="theme-community.css" />
   </head>
   <body>
-    <div class="wrap">
-      <header>
-        <h1>LP外装比較</h1>
-        <p>本文は維持し、外装のみ刷新。3トーンを同時比較して正式採用案を決めるためのページです。</p>
-      </header>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <p class="brand">一般社団法人次世代通信機構 | Re:Connect Pay</p>
+        <p class="mode">コミュニティ型</p>
+      </div>
+    </header>
 
-      <section class="cards">
-        <article class="card">
-          <span class="tag ta">行政信頼型</span>
-          <h2>Public / Trust</h2>
-          <ul>
-            <li>審査資料とトーンを揃えた硬派デザイン</li>
-            <li>格子パターンでインフラ感を強化</li>
-            <li>補助金・自治体説明で使いやすい</li>
-          </ul>
-          <a class="btn ba" href="admin.html">この案を見る</a>
-        </article>
-
-        <article class="card">
-          <span class="tag tb">企業提携型</span>
-          <h2>Partner / Growth</h2>
-          <ul>
-            <li>現行サイト（orca1.net）基調色の青系トーンに統一</li>
-            <li>商談向けにCTAを前面化</li>
-            <li>企業理念との接続セクションを追加</li>
-          </ul>
-          <a class="btn bb" href="business.html">この案を見る</a>
-        </article>
-
-        <article class="card">
-          <span class="tag tc">コミュニティ型</span>
-          <h2>Community / Warm</h2>
-          <ul>
-            <li>参加しやすい温度感を重視</li>
-            <li>地域・イベントの文脈に強い</li>
-            <li>支援者募集導線と相性が良い</li>
-          </ul>
-          <a class="btn bc" href="community.html">この案を見る</a>
-        </article>
+    <main>
+      <section class="hero container fade-up">
+        <p class="chip">地域参加型・実証コミュニティモデル</p>
+        <h1>地域・都市の決済強靭化を、<br />円建てデジタル決済で実装する</h1>
+        <p class="hero-copy">通信基盤と連動した円建てステーブルコイン決済を実証し、平時の利便性と有事の継続性を同時に実現します。</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#contact">先行コミュニティに参加する</a>
+          <a class="btn ghost" href="#guide">参加ガイドを確認する</a>
+        </div>
+        <div class="switch-links">
+          <a href="admin.html">行政信頼型</a>
+          <a href="business.html">企業提携型</a>
+          <a href="community.html">コミュニティ型</a>
+        </div>
       </section>
 
-      <div class="footer-links">
-        <a href="index-legacy.html">旧デザインを見る</a>
+      <section class="section container fade-up" id="problem">
+        <h2>課題</h2>
+        <div class="grid three">
+          <article class="card"><h3>継続性の弱さ</h3><p>災害・通信障害時に既存決済導線が停止しやすい。</p></article>
+          <article class="card"><h3>可視性の不足</h3><p>地域内の資金循環が見えず、施策評価につながりにくい。</p></article>
+          <article class="card"><h3>導入負荷の高さ</h3><p>小規模事業者にはコストと運用負荷が重い。</p></article>
+        </div>
+      </section>
+
+      <section class="section container fade-up" id="solution">
+        <h2>解決策</h2>
+        <p class="lead">用途限定の円建てデジタル決済を地域商店・イベント・防災訓練で実証。監査可能なログを標準搭載し、行政・事業者・利用者の三者が検証可能な運用モデルを確立します。技術と情報を活用し、ネットワークの力で地域のつながりを実装します。</p>
+        <div class="panel">
+          <p class="panel-label">コンセプト翻訳</p>
+          <p>内部テーマ「Forbidden 404からの再生」を、対外的には<strong>分断された決済・信頼基盤の再接続</strong>として実装します。</p>
+        </div>
+      </section>
+
+      <section class="section container fade-up" id="guide">
+        <h2>コミュニティ参加ガイド</h2>
+        <div class="grid two">
+          <article class="card">
+            <h3>参加対象</h3>
+            <p>地域団体、イベント運営者、商店会、教育・福祉活動団体。小規模な実証単位から参加できます。</p>
+          </article>
+          <article class="card">
+            <h3>参加ステップ</h3>
+            <p>説明会参加 → 利用者登録 → 加盟店登録 → 実証開始。1か月以内に初回運用まで到達可能です。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container fade-up" id="mechanism">
+        <h2>仕組み</h2>
+        <div class="flow">
+          <div class="flow-item"><p class="step">01</p><h3>発行管理</h3><p>用途・対象・上限を設定した安全な発行管理。</p></div>
+          <div class="flow-item"><p class="step">02</p><h3>利用者ウォレット</h3><p>迷わず使えるシンプルな支払い導線。</p></div>
+          <div class="flow-item"><p class="step">03</p><h3>加盟店アプリ</h3><p>低負荷で導入できる受け取り運用。</p></div>
+          <div class="flow-item"><p class="step">04</p><h3>監査ダッシュボード</h3><p>利用状況・稼働率・継続率を可視化。</p></div>
+        </div>
+      </section>
+
+      <section class="section container fade-up" id="usecase">
+        <h2>ユースケース</h2>
+        <div class="grid three">
+          <article class="card"><h3>地域商店決済</h3><p>日常利用で定着率と加盟店継続率を検証。</p></article>
+          <article class="card"><h3>イベント決済</h3><p>高トラフィック環境で処理性能を検証。</p></article>
+          <article class="card"><h3>防災訓練配布金</h3><p>緊急時オペレーションの実効性を検証。</p></article>
+        </div>
+      </section>
+
+      <section class="section container fade-up" id="plan">
+        <h2>実証計画（12か月）</h2>
+        <div class="timeline">
+          <article><p class="period">0-3か月</p><h3>設計</h3><p>要件定義、連携先確定、法務整理。</p></article>
+          <article><p class="period">4-6か月</p><h3>実装</h3><p>システム実装、加盟店導入、利用者募集。</p></article>
+          <article><p class="period">7-12か月</p><h3>検証</h3><p>KPI評価、改善施策、横展開設計。</p></article>
+        </div>
+      </section>
+
+      <section class="section container fade-up" id="kpi">
+        <h2>KPI</h2>
+        <div class="grid kpi-grid">
+          <article class="kpi"><p class="kpi-value">100</p><p class="kpi-label">加盟店数</p></article>
+          <article class="kpi"><p class="kpi-value">3,000</p><p class="kpi-label">利用者数</p></article>
+          <article class="kpi"><p class="kpi-value">30,000</p><p class="kpi-label">月間決済件数</p></article>
+          <article class="kpi"><p class="kpi-value">99.5%</p><p class="kpi-label">決済成功率</p></article>
+          <article class="kpi"><p class="kpi-value">80%</p><p class="kpi-label">加盟店継続率</p></article>
+          <article class="kpi"><p class="kpi-value">95%</p><p class="kpi-label">防災訓練時稼働率</p></article>
+        </div>
+      </section>
+
+      <section class="section container contact fade-up" id="contact">
+        <h2>参加・連携のご相談</h2>
+        <p class="lead">地域運営者・参加者・店舗が連携し、生活導線で使える決済体験を定着させます。</p>
+        <div class="cta-row">
+          <a class="btn primary" href="mailto:info@example.org?subject=先行コミュニティ参加相談">先行コミュニティ参加を相談する</a>
+          <a class="btn ghost" href="mailto:info@example.org?subject=参加ガイド請求">参加ガイドを請求する</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>次世代地域決済基盤（Re:Connect Pay）</p>
+        <p>© 一般社団法人次世代通信機構</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
