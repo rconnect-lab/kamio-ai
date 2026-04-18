@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>コミュニティ参加ガイド | 次世代地域決済基盤</title>
+    <meta name="description" content="先行コミュニティ向けの参加条件、手順、体制、FAQをまとめたガイド。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #f7f7f7;
+        --surface: #ffffff;
+        --ink: #17253a;
+        --muted: #4d6076;
+        --line: #d5deea;
+        --brand: #0b90dd;
+        --brand-strong: #086ca6;
+        --accent: #dd6000;
+        --radius: 16px;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Open Sans", "Noto Sans JP", sans-serif;
+        color: var(--ink);
+        background: radial-gradient(circle at 8% 10%, rgba(11, 144, 221, 0.1), transparent 42%),
+          radial-gradient(circle at 92% 12%, rgba(221, 96, 0, 0.08), transparent 34%), var(--bg);
+        line-height: 1.72;
+      }
+      .container { width: min(980px, calc(100% - 2rem)); margin: 0 auto; }
+      header { padding: 2rem 0 1rem; }
+      h1, h2, h3 { font-family: "Roboto", "Noto Sans JP", sans-serif; margin: 0 0 .7rem; }
+      h1 { font-size: clamp(1.9rem, 3.8vw, 3rem); }
+      h2 { margin-top: 1.8rem; font-size: clamp(1.3rem, 2.2vw, 1.9rem); }
+      p { margin: 0; color: var(--muted); }
+      .lead { margin-top: .6rem; max-width: 760px; }
+      .card {
+        margin-top: 1rem;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 1rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+      }
+      .list { margin: .4rem 0 0 1rem; color: var(--muted); }
+      .cta-row { margin-top: 1rem; display: flex; gap: .7rem; flex-wrap: wrap; }
+      .btn {
+        display: inline-flex;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        padding: 0 1rem;
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .btn.primary { background: linear-gradient(130deg, var(--brand), var(--brand-strong)); color: #fff; }
+      .btn.ghost { border: 1px solid var(--line); background: #fff; color: var(--ink); }
+      footer { margin: 2rem 0 2.4rem; color: var(--muted); font-size: .9rem; }
+      @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>コミュニティ参加ガイド</h1>
+        <p class="lead">次世代地域決済基盤（Re:Connect Pay）先行実証に参加するための実務ガイドです。地域団体・商店・イベント運営者が同じ手順で導入できるように整理しています。</p>
+      </header>
+
+      <section>
+        <h2>1. 参加対象</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>団体・運営者</h3>
+            <ul class="list">
+              <li>地域団体、自治会、NPO、教育・福祉活動団体</li>
+              <li>イベント運営者（地域祭、マルシェ、展示会など）</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>店舗・事業者</h3>
+            <ul class="list">
+              <li>商店街加盟店、個店、移動販売事業者</li>
+              <li>キャッシュレス導入を強化したい小規模事業者</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. 参加手順（標準4ステップ）</h2>
+        <div class="card">
+          <ul class="list">
+            <li>ステップ1: Google Formで説明会に申し込み</li>
+            <li>ステップ2: 説明会参加後、対象区分に応じて参加登録</li>
+            <li>ステップ3: 利用者・加盟店の初期設定（約1週間）</li>
+            <li>ステップ4: 実証開始（初回レビューは開始2週間後）</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. 役割分担</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>次世代通信機構</h3>
+            <ul class="list">
+              <li>実証設計・運用管理・KPIレビュー</li>
+              <li>ガイド提供、導入支援、問い合わせ対応</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>参加団体・参加店舗</h3>
+            <ul class="list">
+              <li>現場運用、利用者案内、フィードバック提供</li>
+              <li>定例レビューへの参加（月1回）</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>4. 連絡先（orca1.net）</h2>
+        <div class="card">
+          <ul class="list">
+            <li>総合窓口: community@orca1.net</li>
+            <li>参加登録・資料請求: join@orca1.net</li>
+            <li>説明会運用: briefing@orca1.net</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>5. 申込導線</h2>
+        <div class="cta-row">
+          <a class="btn primary" href="https://forms.gle/REPLACE_WITH_ORCA1_FORM" target="_blank" rel="noopener noreferrer">Google Formで説明会に申し込む</a>
+          <a class="btn ghost" href="community.html">コミュニティLPに戻る</a>
+        </div>
+      </section>
+
+      <footer>
+        © 一般社団法人次世代通信機構 | 次世代地域決済基盤（Re:Connect Pay）
+      </footer>
+    </div>
+  </body>
+</html>
