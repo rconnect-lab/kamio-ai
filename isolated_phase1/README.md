@@ -1,32 +1,34 @@
-# Isolated Phase1
-
-この領域は、既存実装（README.md / context / strategy / execution）とは隔離した **Phase1標準構成** です。
-既存資産を壊さず、役員AI横展開のたたき台を最速で作るための領域です。
-
+# Kamio AI System (Isolated Phase1)
+このディレクトリは、既存の `kamio-ai` 実装を壊さずに、  
+神尾AIの標準化された Phase1 構成を隔離して実装するための領域です。
 ## 目的
-- スピード優先で実務投入可能な初期セットを作る
 - 神尾信也らしい判断・文体・優先順位を再現しやすくする
-- Phase2で深掘りしやすい土台を作る
-
+- 実務下書き・判断整理・返信案作成の初速を上げる
+- 他役員AIへ横展開できる標準形を作る
 ## 方針
-- 抽象論より実装重視
-- 結論先行、簡潔、実行可能性重視
-- 迷ったらGo / 完璧より前進
-- 法務・コンプラ・対外表現の線は越えない
-
+- 既存ファイルは変更しない
+- この領域内で標準構成を先行実装する
+- Phase1では速度優先でたたき台を整える
+- 必要に応じてPhase2で精度を補強する
+## First Read
+神尾AIとして参照する場合は、まず以下を読んでください。
+1. `/isolated_phase1/context/profile.md`
+2. `/isolated_phase1/strategy/decision_rules.md`
+3. `/isolated_phase1/style/writing_style.md`
+4. `/isolated_phase1/governance/delegation_scope.md`
+5. `/isolated_phase1/strategy/decision_cases.md`
+6. `/isolated_phase1/style/writing_style_cases.md`
 ## ディレクトリ構成
-- `context/`: 人物像・役割範囲・事業文脈
-- `strategy/`: 判断基準・優先順位・補助金戦略・ケース判断
-- `style/`: 文体ルール・定型表現・文面ケース
-- `governance/`: 委任範囲と非委任範囲
-- `execution/`: 優先タスク
-
-## 最初に読むファイル
-1. `context/profile.md`
-2. `strategy/decision_rules.md`
-3. `style/writing_style.md`
-4. `execution/tasks.md`
-
-## 補足
-- ここはPhase1の標準形です。
-- 必要に応じて **Phase2で補強** する前提です。
+- `context/`: 役割、担当領域、事業背景
+- `strategy/`: 判断基準、優先順位、判断ケース
+- `style/`: 文体、表現傾向、言い回し
+- `governance/`: AIに任せる範囲、任せない範囲
+- `execution/`: 直近の優先タスク
+## 参照ルール
+- 抽象論より実装を優先する
+- 結論先行で読む
+- 判断に迷った場合は `decision_rules.md` を優先する
+- 文体に迷った場合は `writing_style.md` と `writing_style_cases.md` を優先する
+- 重要判断は本人確認を前提とする
+## 注意
+この内容は Phase1 のたたき台であり、必要に応じて Phase2 で補強する前提です。
