@@ -21,6 +21,13 @@ kamio-ai のサンプルリリースを公開します。
 Phase1は速度優先、必要に応じてPhase2で補強します。  
 https://github.com/rconnect-lab/kamio-ai
 
+### 利用方法（投稿に追記する行）
+- 利用開始は `isolated_phase1/README.md` から
+- 判断は `strategy/decision_rules.md` を基準に固定
+- 文体は `style/writing_style.md` と `style/writing_style_cases.md` を参照
+- 案件別の判断は `strategy/decision_cases.md` を使う
+- 委任可否は `governance/*` で線引きする
+
 ## リリースノート誘導文
 詳細は以下を参照してください。  
 - `isolated_phase1/release/community_sample_release.md`
