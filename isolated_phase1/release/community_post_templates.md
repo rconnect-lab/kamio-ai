@@ -28,6 +28,11 @@ https://github.com/rconnect-lab/kamio-ai
 - 案件別の判断は `strategy/decision_cases.md` を使う
 - 委任可否は `governance/*` で線引きする
 
+### 非デジタルネイティブ向け案内（投稿に追記する行）
+- スマホ操作に不慣れな方向けに、利用シーン別ガイドを用意しています
+- フォーム入力が難しい場合はメール受付（`briefing@orca1.net`）で対応します
+- 詳細: `isolated_phase1/release/non_digital_native_ux_guide.md`
+
 ## リリースノート誘導文
 詳細は以下を参照してください。  
 - `isolated_phase1/release/community_sample_release.md`
